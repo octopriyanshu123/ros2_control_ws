@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="arm">
+
+  <!-- Import r6bot macro -->
+  <xacro:include filename="$(find ros2_control_demo_description)/octo_gauge_rover/urdf/arm.urdf"/>
+
+
+
+
+  <!-- Import r6bot ros2_control description -->
+  <xacro:include filename="$(find example_7)/ros2_control/arm.ros2_control.xacro" />
+  <xacro:arm_ros2_control name="arm"/>
+  
+    </robot>

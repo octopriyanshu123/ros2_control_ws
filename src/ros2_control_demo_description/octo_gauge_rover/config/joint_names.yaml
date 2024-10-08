@@ -1,0 +1,11 @@
+controller_joint_names:
+  - right_front_wheel
+  - right_back_wheel
+  - left_front_wheel
+  - left_back_wheel
+  - base_joint
+  - shoulder_joint
+  - elbow_joint
+  - tool_joint
+  - gimble_pan
+  - gimble_tilt
