@@ -8,12 +8,12 @@
     </description>
   </class>
 
-  <!-- Controller Plugin (if you have a custom controller) -->
-  <!-- <class name="example_7/RobotController"
+  <!-- Controller Plugin -->
+  <class name="example_7/RobotController"
          type="example_7::RobotController"
          base_class_type="controller_interface::ControllerInterface">
     <description>
-      Robot controller plugin for 4-joint arm robot.
+      Controller for the 4-joint arm robot that assigns random values to joint positions between 1 and 5.
     </description>
-  </class> -->
+  </class>
 </library>

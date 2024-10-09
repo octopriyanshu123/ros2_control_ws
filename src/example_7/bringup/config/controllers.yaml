@@ -1,3 +1,21 @@
 controller_manager:
   ros__parameters:
-    update_rate: 50  # or your desired update rate
+    update_rate: 50  # Update rate for the controller manager
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster  # Broadcasting the joint states
+    arm_controller:
+      type: example_7/RobotController  # Custom arm controller
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - arm_base_joint         # List of joints
+      - arm_shoulder_joint
+      - arm_elbow_joint
+      - arm_tool_joint
+
+    command_interfaces:        # Defining which interface to control
+      - position               # Using position control
+
+    state_interfaces:          # Defining which state interfaces to track
+      - position               # Tracking the joint positions

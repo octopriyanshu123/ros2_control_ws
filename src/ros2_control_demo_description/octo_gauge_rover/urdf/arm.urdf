@@ -795,7 +795,7 @@
 
 
 
-
+ 
 <ros2_control name="MyRobotSystem" type="system">
     <hardware>
       <plugin>example_7::RobotSystem</plugin> <!-- Reference your actual hardware interface plugin -->

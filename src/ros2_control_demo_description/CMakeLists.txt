@@ -23,10 +23,10 @@ install(
   DESTINATION share/${PROJECT_NAME}/r6bot
 )
 
-
 install(
   DIRECTORY octo_gauge_rover/meshes octo_gauge_rover/urdf octo_gauge_rover/config  octo_gauge_rover/worlds
   DESTINATION share/${PROJECT_NAME}/octo_gauge_rover
 )
+
 
 ament_package()
